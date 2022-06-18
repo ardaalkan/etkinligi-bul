@@ -1,1 +1,1 @@
-# etkinli-i-bul
+# etkinligi-bul
