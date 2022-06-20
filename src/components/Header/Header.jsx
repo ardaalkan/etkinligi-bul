@@ -16,19 +16,20 @@ const Header = () => {
       </div>
       <div className="bottom-header-filters">
         <select value={selects} onChange={(e) => setSelects(e.target.value)}>
-          <option>Apple</option>
-          <option>Apple</option>
-          <option>Apple</option>
+          <option>KONSER</option>
+          <option>TİYATRO</option>
+          <option>SERGİ</option>
         </select>
         <select value={selects} onChange={(e) => setSelects(e.target.value)}>
-          <option>Apple</option>
-          <option>Apple</option>
-          <option>Apple</option>
+          <option>BUGÜN</option>
+          <option>HAFTAYA</option>
+          <option>GELECEK</option>
         </select>
         <select value={selects} onChange={(e) => setSelects(e.target.value)}>
-          <option>Apple</option>
-          <option>Apple</option>
-          <option>Apple</option>
+          <option>ANKARA</option>
+          <option>İSTANBUL</option>
+          <option>İZMİR</option>
+          <option>ANTALYA</option>
         </select>
       </div>
       <hr width="100%"></hr>
