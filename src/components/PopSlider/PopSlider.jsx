@@ -26,6 +26,8 @@ import { dataForTrySlide } from "../../Data/SliderData.js";
 //   );
 // }
 
+
+
 const PopSlider = () => {
   const settings = {
     dots: true,
