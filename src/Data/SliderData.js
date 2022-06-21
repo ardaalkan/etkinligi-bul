@@ -1,4 +1,4 @@
-export const dataForTrySlide = [
+export const dataForSlide = [
   {
     id: 3,
     title: "Tarkan Tevetoğlu",

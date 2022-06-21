@@ -5,31 +5,24 @@ import "./styles/App.css";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [data, setData] = useState("");
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch("https://my-api-alk.herokuapp.com/etkinlik?")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setData(data);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setData(null);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-  }, []);
+  const [error, setError] = useState(false);
 
   return (
     <div className="App">
       <Header />
       <PopSlider />
-      <EventItems />
+      <div className="api-card-container-card">
+        <div className="api-card-container-top-card">
+          <img src="" alt="alk" />
+        </div>
+        <div className="api-card-container-bottom-card">
+          <p>konser</p>
+          <p>zaman</p>
+          <p>şehir</p>
+        </div>
+      </div>
     </div>
   );
 }

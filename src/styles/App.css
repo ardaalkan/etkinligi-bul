@@ -100,7 +100,7 @@ hr {
 
 .popslider-container-box > h1 {
   margin: 15px auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #6d6d6d;
 }
 
@@ -143,6 +143,14 @@ hr {
   margin: 10px 20px;
 }
 
-.card-bottom h3{
+.card-bottom h3 {
   font-size: 0.9rem;
+}
+
+/* events lists*/
+
+.api-card-container-card {
+
+  width: 55%;
+  margin: 70px auto;
 }

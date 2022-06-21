@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { dataForTrySlide } from "../../Data/SliderData.js";
+import { dataForSlide } from "../../Data/SliderData.js";
 
 // function SampleNextArrow(props) {
 //   const { className, style, onClick } = props;
@@ -25,8 +25,6 @@ import { dataForTrySlide } from "../../Data/SliderData.js";
 //     />
 //   );
 // }
-
-
 
 const PopSlider = () => {
   const settings = {
@@ -69,7 +67,7 @@ const PopSlider = () => {
       <h1> Popüler Etkinlikler </h1>
       <div className="popslider-container">
         <Slider {...settings}>
-          {dataForTrySlide.map((item) => (
+          {dataForSlide.map((item) => (
             <div className="card">
               <div className="card-top">
                 <img src={item.linkImg} alt={item.title} />
